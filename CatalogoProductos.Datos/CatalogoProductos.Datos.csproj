@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcessoDatos.cs" />
+    <Compile Include="AccesoDatos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\RepositorioArticulo.cs" />
+    <Compile Include="Repositorios\RepositorioCliente.cs" />
+    <Compile Include="Repositorios\RepositorioVoucher.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CatalogoProductos.Dominio\CatalogoProductos.Dominio.csproj">

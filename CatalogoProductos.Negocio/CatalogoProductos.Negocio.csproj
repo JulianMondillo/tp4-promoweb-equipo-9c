@@ -41,10 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Voucher\NegocioVoucher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CatalogoProductos.Comun\CatalogoProductos.Comun.csproj">
+      <Project>{469c53dc-5f42-481c-91ea-67941d43913e}</Project>
+      <Name>CatalogoProductos.Comun</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CatalogoProductos.Datos\CatalogoProductos.Datos.csproj">
       <Project>{ecbbb641-ced9-4c10-82c8-0ab4388d32d8}</Project>
       <Name>CatalogoProductos.Datos</Name>

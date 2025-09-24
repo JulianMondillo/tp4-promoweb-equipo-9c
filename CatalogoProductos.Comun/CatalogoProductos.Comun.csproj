@@ -41,26 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Helpers\ValidadorCampos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CatalogoProductos.Datos\CatalogoProductos.Datos.csproj">
-      <Project>{ecbbb641-ced9-4c10-82c8-0ab4388d32d8}</Project>
-      <Name>CatalogoProductos.Datos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CatalogoProductos.Dominio\CatalogoProductos.Dominio.csproj">
-      <Project>{29d85788-7467-4ce9-a585-3874af936b24}</Project>
-      <Name>CatalogoProductos.Dominio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CatalogoProductos.Negocio\CatalogoProductos.Negocio.csproj">
-      <Project>{8139c92f-9984-4088-8e02-2c57ec0e5913}</Project>
-      <Name>CatalogoProductos.Negocio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CatalogoProductos.UI\CatalogoProductos.UI.csproj">
-      <Project>{34bee526-1a76-4783-9d10-cc259cf6fd9b}</Project>
-      <Name>CatalogoProductos.UI</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

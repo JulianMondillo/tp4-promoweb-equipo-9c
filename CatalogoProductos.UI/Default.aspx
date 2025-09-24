@@ -2,43 +2,33 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
 
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
+
+    <section class="d-flex align-items-center justify-content-center flex-grow-1">
+        <div class="card p-4 rounded-4 shadow w-100" style="max-width: 50rem;">
+            <div class="d-flex justify-content-center mb-3">
+                <h2>Ingresá el código del voucher</h2>
+            </div>
+            <div class="d-flex card-body flex-column flex-fill gap-4">
+                <asp:TextBox
+                    ID="txbCodigo"
+                    CssClass="w-100 form-control form-control-lg text-center"
+                    MaxLength="50"
+                    Placeholder="Ejemplo: ABCD1234"
+                    runat="server" />
+                <div>
+                    <asp:Button
+                        ID="btnValidarVoucher"
+                        CssClass="btn btn-primary w-100 rounded-3 btn-lg"
+                        OnClick="btnValidarVoucher_Click"
+                        runat="server"
+                        Text="Continuar" />
+                    
+                    <asp:Label ID="lblErrorValidacion" CssClass="d-none" runat="server" Text=""></asp:Label>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
 
 </asp:Content>

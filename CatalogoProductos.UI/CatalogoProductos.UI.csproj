@@ -121,6 +121,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="RegistroCliente.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -176,6 +177,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="SeleccionarPremio.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -210,6 +212,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroCliente.aspx.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroCliente.aspx.designer.cs">
+      <DependentUpon>RegistroCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarPremio.aspx.cs">
+      <DependentUpon>SeleccionarPremio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SeleccionarPremio.aspx.designer.cs">
+      <DependentUpon>SeleccionarPremio.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,6 +263,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CatalogoProductos.Comun\CatalogoProductos.Comun.csproj">
+      <Project>{469c53dc-5f42-481c-91ea-67941d43913e}</Project>
+      <Name>CatalogoProductos.Comun</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CatalogoProductos.Negocio\CatalogoProductos.Negocio.csproj">
       <Project>{8139c92f-9984-4088-8e02-2c57ec0e5913}</Project>
       <Name>CatalogoProductos.Negocio</Name>

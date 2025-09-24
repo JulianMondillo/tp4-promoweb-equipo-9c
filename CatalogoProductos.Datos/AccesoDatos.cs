@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CatalogoProductos.Datos
 {
-    internal class AcessoDatos
+    public class AccesoDatos
     {
         private SqlConnection conexion;
         private SqlCommand comando;
@@ -19,7 +19,7 @@ namespace CatalogoProductos.Datos
             get { return lector; }
         }
 
-        public AcessoDatos()
+        public AccesoDatos()
         {
             conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true");
             comando = new SqlCommand();
