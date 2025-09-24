@@ -44,7 +44,9 @@
     <Compile Include="Entidades\Articulo.cs" />
     <Compile Include="Entidades\Categoria.cs" />
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Imagen.cs" />
     <Compile Include="Entidades\Marca.cs" />
+    <Compile Include="Entidades\Voucher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
