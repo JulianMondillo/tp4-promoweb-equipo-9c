@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|c:\\users\\julim\\desktop\\cufa\\programacion 3\\tp4promoweb\\tp4-promoweb-equipo-9c\\catalogoproductos.dominio\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECBBB641-CED9-4C10-82C8-0AB4388D32D8}|CatalogoProductos.Datos\\CatalogoProductos.Datos.csproj|c:\\users\\julim\\desktop\\cufa\\programacion 3\\tp4promoweb\\tp4-promoweb-equipo-9c\\catalogoproductos.datos\\acessodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECBBB641-CED9-4C10-82C8-0AB4388D32D8}|CatalogoProductos.Datos\\CatalogoProductos.Datos.csproj|solutionrelative:catalogoproductos.datos\\acessodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\catalogoproductos.dominio\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|solutionrelative:catalogoproductos.dominio\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|c:\\users\\julim\\desktop\\cufa\\programacion 3\\tp4promoweb\\tp4-promoweb-equipo-9c\\catalogoproductos.dominio\\entidades\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|solutionrelative:catalogoproductos.dominio\\entidades\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|c:\\users\\julim\\desktop\\cufa\\programacion 3\\tp4promoweb\\tp4-promoweb-equipo-9c\\catalogoproductos.dominio\\entidades\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|solutionrelative:catalogoproductos.dominio\\entidades\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|c:\\users\\julim\\desktop\\cufa\\programacion 3\\tp4promoweb\\tp4-promoweb-equipo-9c\\catalogoproductos.dominio\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29D85788-7467-4CE9-A585-3874AF936B24}|CatalogoProductos.Dominio\\CatalogoProductos.Dominio.csproj|solutionrelative:catalogoproductos.dominio\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8139C92F-9984-4088-8E02-2C57EC0E5913}|CatalogoProductos.Negocio\\CatalogoProductos.Negocio.csproj|C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\catalogoproductos.negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8139C92F-9984-4088-8E02-2C57EC0E5913}|CatalogoProductos.Negocio\\CatalogoProductos.Negocio.csproj|solutionrelative:catalogoproductos.negocio\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECBBB641-CED9-4C10-82C8-0AB4388D32D8}|CatalogoProductos.Datos\\CatalogoProductos.Datos.csproj|C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\catalogoproductos.datos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECBBB641-CED9-4C10-82C8-0AB4388D32D8}|CatalogoProductos.Datos\\CatalogoProductos.Datos.csproj|solutionrelative:catalogoproductos.datos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{469C53DC-5F42-481C-91EA-67941D43913E}|CatalogoProductos.Comun\\CatalogoProductos.Comun.csproj|C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\catalogoproductos.comun\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{469C53DC-5F42-481C-91EA-67941D43913E}|CatalogoProductos.Comun\\CatalogoProductos.Comun.csproj|solutionrelative:catalogoproductos.comun\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AcessoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Datos\\AcessoDatos.cs",
+              "RelativeDocumentMoniker": "CatalogoProductos.Datos\\AcessoDatos.cs",
+              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Datos\\AcessoDatos.cs",
+              "RelativeToolTip": "CatalogoProductos.Datos\\AcessoDatos.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T16:33:47.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Categoria.cs",
               "RelativeDocumentMoniker": "CatalogoProductos.Dominio\\Entidades\\Categoria.cs",
@@ -51,84 +44,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T15:00:54.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Marca.cs",
-              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Marca.cs",
-              "RelativeDocumentMoniker": "CatalogoProductos.Dominio\\Entidades\\Marca.cs",
-              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Marca.cs",
-              "RelativeToolTip": "CatalogoProductos.Dominio\\Entidades\\Marca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:00:36.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Articulo.cs",
-              "RelativeDocumentMoniker": "CatalogoProductos.Dominio\\Entidades\\Articulo.cs",
-              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Articulo.cs",
-              "RelativeToolTip": "CatalogoProductos.Dominio\\Entidades\\Articulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:59:58.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Cliente.cs",
-              "RelativeDocumentMoniker": "CatalogoProductos.Dominio\\Entidades\\Cliente.cs",
-              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Dominio\\Entidades\\Cliente.cs",
-              "RelativeToolTip": "CatalogoProductos.Dominio\\Entidades\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:54:03.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Comun\\Class1.cs",
-              "RelativeDocumentMoniker": "CatalogoProductos.Comun\\Class1.cs",
-              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Comun\\Class1.cs",
-              "RelativeToolTip": "CatalogoProductos.Comun\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:53:23.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Datos\\Class1.cs",
-              "RelativeDocumentMoniker": "CatalogoProductos.Datos\\Class1.cs",
-              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Datos\\Class1.cs",
-              "RelativeToolTip": "CatalogoProductos.Datos\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:52:14.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Negocio\\Class1.cs",
-              "RelativeDocumentMoniker": "CatalogoProductos.Negocio\\Class1.cs",
-              "ToolTip": "C:\\Users\\julim\\Desktop\\cufa\\Programacion 3\\TP4PROMOWEB\\tp4-promoweb-equipo-9c\\CatalogoProductos.Negocio\\Class1.cs",
-              "RelativeToolTip": "CatalogoProductos.Negocio\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T14:51:45.263Z",
               "EditorCaption": ""
             }
           ]
