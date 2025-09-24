@@ -15,7 +15,8 @@ namespace CatalogoProductos.Dominio.Entidades
         public decimal Precio { get; set; }
 
         // Relaciones
-        public int IdMarca { get; set; }
-        public int IdCategoria { get; set; }
+        public Marca Marca{ get; set; }
+        public Categoria Categoria { get; set; }
+        public List<Imagen> Imagenes { get; set; } = new List<Imagen>();
     }
 }
