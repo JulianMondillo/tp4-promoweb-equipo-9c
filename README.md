@@ -2,6 +2,14 @@
 Trabajo Práctico Web – Promo - EQUIPO 9C
 
 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+DESCRIPCIÓN
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 El siguiente trabajo práctico se trata de una aplicación web en ASP.NET para la gestión de una promoción comercial con vouchers.
 
 La aplicación permite:
