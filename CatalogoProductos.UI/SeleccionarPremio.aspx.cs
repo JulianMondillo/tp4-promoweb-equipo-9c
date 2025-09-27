@@ -46,11 +46,11 @@ namespace CatalogoProductos.UI
 
         protected void rpArticulos_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            if (e.CommandName == "Seleccionar Premio!")
+            if (e.CommandName == "SeleccionarPremio")
             {
                 string artId = e.CommandArgument.ToString();
                 // Guardás y pasás al paso de registro/confirmación
-                Response.Redirect("Registro.aspx?artId=" + artId, false);
+                Response.Redirect("~/RegistroCliente.aspx?artId=" + artId, false);
             }
         }
     }

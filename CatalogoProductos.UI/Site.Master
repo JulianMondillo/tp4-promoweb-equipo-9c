@@ -64,7 +64,7 @@
 
                             <!-- Paso 3 -->
                             <div class="d-flex align-items-center">
-                                <asp:HyperLink ID="hlTercerPaso" NavigateUrl="~/Registro.aspx" runat="server" Enabled="false" CssClass="btn btn-dark d-flex disabled align-items-center">
+                                <asp:HyperLink ID="hlTercerPaso" NavigateUrl="~/RegistroCliente.aspx" runat="server" Enabled="false" CssClass="btn btn-dark d-flex disabled align-items-center">
                                      <i class="bi bi-3-circle-fill me-2"></i>Registrá tus datos
                                 </asp:HyperLink>
                             </div>

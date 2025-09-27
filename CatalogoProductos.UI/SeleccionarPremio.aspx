@@ -12,11 +12,15 @@
             <div class="card-body text-center">
               <h5 class="card-title mb-2"><%# Eval("Nombre") %></h5>
               <p class="card-text text-muted small"><%# Eval("Descripcion") %></p>
-              <asp:LinkButton ID="btnSeleccionar" runat="server"
-                              CssClass="btn btn-primary w-100 rounded-pill"
-                              CommandName="SeleccionarPremio"
-                              CommandArgument='<%# Eval("Id") %>'
-                              Text="Seleccionar Premio" />
+              
+              <button type="button"
+                      class="btn btn-primary w-100 rounded-pill"
+                      data-id='<%# Eval("Id") %>'
+                      data-nombre='<%# Eval("Nombre") %>'
+                      data-desc='<%# Eval("Descripcion") %>'
+                      onclick="openConfirmModal(this)">
+                Seleccionar Premio
+              </button>
             </div>
           </div>
         </div>
@@ -25,4 +29,36 @@
   </div>
 </div>
 
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+      <div class="modal-body p-4">
+        <h5 class="mb-3">Confirmar selección</h5>
+        <div class="fw-semibold" id="mNombre"></div>
+        <div class="text-muted small" id="mDesc"></div>
+        <div class="d-flex justify-content-end gap-2 mt-4">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="goToRegister()">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let selectedId = null;
+
+  function openConfirmModal(btn) {
+    selectedId = btn.getAttribute('data-id');
+    document.getElementById('mNombre').textContent = btn.getAttribute('data-nombre') || '';
+    document.getElementById('mDesc').textContent   = btn.getAttribute('data-desc') || '';
+
+    const modal = new bootstrap.Modal(document.getElementById('confirmModal'));
+    modal.show();
+  }
+
+  function goToRegister() {
+    window.location.href = '<%= ResolveUrl("~/RegistroCliente.aspx") %>?artId=' + encodeURIComponent(selectedId);
+  }
+</script>
 </asp:Content>
