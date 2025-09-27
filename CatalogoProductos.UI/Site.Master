@@ -35,8 +35,43 @@
 
 
         <div class="container body-content flex-grow-1 d-flex flex-column">
-            <header class="d-flex m-3 mx-auto w-100">
-                <div class="card p-4 rounded-4 shadow w-100">Aquí va la guía de pasos</div>
+            <header class="m-3 mx-auto w-100">
+                <div class="card p-4 rounded-4 shadow w-100">
+                    <div class="card-body">
+                        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between text-center">
+
+                            <!-- Paso 1 -->
+                            <div class="d-flex align-items-center mb-3 mb-sm-0">
+                                <asp:HyperLink ID="hlPrimerPaso" NavigateUrl="~/Default.aspx"  runat="server" CssClass="btn btn-primary d-flex align-items-center">
+                                    <i class="bi bi-1-circle-fill me-2"></i>Ingresá el código
+                                </asp:HyperLink>
+                            </div>
+
+                            <div class="flex-grow-1 d-none d-sm-block mx-2">
+                                <div style="height: 2px; background-color: #d3d3d3;"></div>
+                            </div>
+
+                            <!-- Paso 2 -->
+                            <div class="d-flex align-items-center mb-3 mb-sm-0">
+                                <asp:HyperLink ID="hlSegundoPaso" NavigateUrl="~/SeleccionarPremio.aspx" runat="server" Enabled="false" CssClass="btn btn-dark disabled d-flex align-items-center">
+                                    <i class="bi bi-2-circle-fill me-2"></i>Seleccioná el premio
+                                </asp:HyperLink>
+                            </div>
+
+                            <div class="flex-grow-1 d-none d-sm-block mx-2">
+                                <div style="height: 2px; background-color: #d3d3d3;"></div>
+                            </div>
+
+                            <!-- Paso 3 -->
+                            <div class="d-flex align-items-center">
+                                <asp:HyperLink ID="hlTercerPaso" NavigateUrl="~/Registro.aspx" runat="server" Enabled="false" CssClass="btn btn-dark d-flex disabled align-items-center">
+                                     <i class="bi bi-3-circle-fill me-2"></i>Registrá tus datos
+                                </asp:HyperLink>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </header>
 
             <asp:ContentPlaceHolder ID="MainContent" runat="server" />
