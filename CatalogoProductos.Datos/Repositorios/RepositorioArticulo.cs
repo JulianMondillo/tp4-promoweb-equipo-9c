@@ -50,44 +50,51 @@ namespace CatalogoProductos.Datos.Repositorios
             try
             {
                 datos.DefinirConsulta(@"
-            SELECT a.Id, a.Nombre, a.Descripcion,
-                   img.ImagenId, img.ImagenUrl
-            FROM ARTICULOS a
-            OUTER APPLY (
-                SELECT TOP 1 i.Id AS ImagenId, i.ImagenUrl
-                FROM IMAGENES i
-                WHERE i.IdArticulo = a.Id
-                ORDER BY i.Id
-            ) img
-            ORDER BY a.Id;
-        ");
+                    SELECT AR.Id, AR.Nombre, AR.Descripcion, 
+                            IM.Id AS IdImagen, IM.ImagenUrl, CAT.Descripcion AS Categoria, MARC.Descripcion AS Marca
+                    FROM ARTICULOS AR
+                    JOIN IMAGENES IM ON AR.Id = IM.IdArticulo
+                    JOIN CATEGORIAS CAT ON AR.IdCategoria = CAT.Id
+                    JOIN MARCAS MARC ON AR.IdMarca = MARC.Id
+                ");
 
                 datos.EjecutarConsulta();
                 lector = datos.Lector;
+                Articulo articuloActual = null;
 
                 while (lector.Read())
                 {
-                    Articulo nuevoArticulo = new Articulo
-                    {
-                        Id = (int)lector["Id"],
-                        Nombre = (string)lector["Nombre"],
-                        Descripcion = lector["Descripcion"] as string,
-                        Imagenes = new List<Imagen>()
-                    };
+                    int? idArticulo = (int)lector["Id"];
 
+                    // si no hay un articulo actual o si hay uno, pero el id que leemos es distinto al articuloActual
+                    // entonces significa que debemos crear el objeto del artículo
+                    if (articuloActual == null || (articuloActual.Id != idArticulo))
+                    {
+                        articuloActual = new Articulo
+                        {
+                            Id = (int)lector["Id"],
+                            Nombre = (string)lector["Nombre"],
+                            Descripcion = lector["Descripcion"] as string,
+                            Categoria = new Categoria { Descripcion = (string)lector["Categoria"] },
+                            Marca = new Marca { Descripcion = (string)lector["Marca"] },
+                            Imagenes = new List<Imagen>()
+                        };
+
+                        articulos.Add(articuloActual);
+                    }
+
+
+                    // si no entra a la condición anterior, entonces vamos a agregarle las imágenes a la lista del aticuloActual sin crear otro objeto
                     if (lector["ImagenUrl"] != DBNull.Value)
                     {
                         Imagen img = new Imagen
                         {
-                            Id = lector["ImagenId"] != DBNull.Value ? (int)lector["ImagenId"] : 0,
+                            Id = (int)lector["IdImagen"],
                             Url = (string)lector["ImagenUrl"]
                         };
-                        nuevoArticulo.Imagenes.Add(img);
+                        articuloActual.Imagenes.Add(img);
                     }
-
-                    articulos.Add(nuevoArticulo);
                 }
-
                 return articulos;
             }
             catch

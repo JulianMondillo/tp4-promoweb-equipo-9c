@@ -31,7 +31,7 @@ namespace CatalogoProductos.UI
         public void ConfigurarStepper()
         {
             var codigoVoucher = Session["codigoVoucher"];
-            var premioSeleccionado = Session["premioSeleccionado"];
+            var premioSeleccionado = Request.QueryString.Get("artId");
             // el paso 1 siempre estará activo.
 
             // el paso 2 solo se activará si hay un codigo en el objeto Session
