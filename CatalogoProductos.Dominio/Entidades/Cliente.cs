@@ -8,7 +8,7 @@ namespace CatalogoProductos.Dominio.Entidades
 {
     public class Cliente
     {
-        public int Id { get; set; }
+        public int Id { get; set; } = 0;
         public string Dni { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }

@@ -19,7 +19,10 @@ namespace CatalogoProductos.UI
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
+            {
                 CargarArticulos();
+                ValidarParametrosRequeridos();
+            }
         }
 
         private void CargarArticulos()
@@ -71,5 +74,16 @@ namespace CatalogoProductos.UI
             }
             return sb.ToString();
         }
+
+        private void ValidarParametrosRequeridos()
+        {
+            string codigo = Session["codigoVoucher"] as string;
+
+            if (string.IsNullOrEmpty(codigo))
+            {
+                Response.Redirect("Default.aspx", true);
+            }
+        }
+
     }
 }

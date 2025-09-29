@@ -10,12 +10,6 @@ namespace CatalogoProductos.Datos.Repositorios
 {
     public class RepositorioArticulo
     {
-        private readonly AccesoDatos _datos;
-
-        public RepositorioArticulo()
-        {
-            _datos = new AccesoDatos();
-        }
         public void GuardarImagenes(int idArticulo, List<string> urls)
         {
             AccesoDatos datos = new AccesoDatos();

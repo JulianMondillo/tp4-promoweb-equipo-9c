@@ -10,23 +10,18 @@ namespace CatalogoProductos.Datos.Repositorios
 {
     public class RepositorioCliente
     {
-        private readonly AccesoDatos _datos;
 
-        public RepositorioCliente()
+        public Cliente ObtenerPorDocumento(string documento)
         {
-            _datos = new AccesoDatos();
-        }
-
-        public Cliente ObtenerPorDni(string dni)
-        {
+            AccesoDatos datos = new AccesoDatos();
             Cliente cliente = null;
             SqlDataReader lector;
             try
             {
-                _datos.DefinirConsulta("SELECT Id, Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP FROM Clientes WHERE Documento = @Documento");
-                _datos.setearParametro("@Documento", dni);
-                _datos.EjecutarConsulta();
-                lector = _datos.Lector;
+                datos.DefinirConsulta("SELECT Id, Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP FROM Clientes WHERE Documento = @Documento");
+                datos.setearParametro("@Documento", documento);
+                datos.EjecutarConsulta();
+                lector = datos.Lector;
 
                 if (lector.Read())
                 {
@@ -51,7 +46,55 @@ namespace CatalogoProductos.Datos.Repositorios
             }
             finally
             {
-                _datos.CerrarConexion();
+                datos.CerrarConexion();
+            }
+        }
+
+        public int Guardar(Cliente nuevoCliente)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.DefinirConsulta(@"
+                    INSERT INTO Clientes 
+                    VALUES (@Documento, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CP)
+                    SELECT CAST(SCOPE_IDENTITY() AS INT);
+                ");
+
+                datos.setearParametro("@Documento", nuevoCliente.Dni);
+                datos.setearParametro("@Nombre", nuevoCliente.Nombre);
+                datos.setearParametro("@Apellido", nuevoCliente.Apellido);
+                datos.setearParametro("@Email", nuevoCliente.Email);
+                datos.setearParametro("@Direccion", nuevoCliente.Direccion);
+                datos.setearParametro("@Ciudad", nuevoCliente.Ciudad);
+                datos.setearParametro("@CP", nuevoCliente.CodigoPostal);
+
+                return datos.EjecutarAccionEscalar();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.CerrarConexion();
+            }
+        }
+
+        public void Actualizar(Cliente cliente)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+               
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                datos.CerrarConexion();
             }
         }
     }

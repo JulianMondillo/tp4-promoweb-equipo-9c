@@ -28,12 +28,12 @@
                                 </asp:PlaceHolder>
                             </div>
 
-                            <div class="card-body text-center">
+                            <div class="card-body text-center d-flex flex-column">
                                 <h5 class="card-title mb-2"><%# Eval("Nombre") %></h5>
-                                <p class="card-text text-muted small"><%# Eval("Descripcion") %></p>
+                                <p class="card-text text-muted small flex-grow-1"><%# Eval("Descripcion") %></p>
 
                                 <button type="button"
-                                    class="btn btn-primary w-100 rounded-pill"
+                                    class="btn btn-primary w-100 rounded-pill mt-auto"
                                     data-id='<%# Eval("Id") %>'
                                     data-nombre='<%# Eval("Nombre") %>'
                                     data-desc='<%# Eval("Descripcion") %>'

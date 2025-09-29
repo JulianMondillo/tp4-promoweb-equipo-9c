@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CatalogoProductos.Datos.Repositorios;
 using CatalogoProductos.Comun;
+using CatalogoProductos.Dominio.Entidades;
 
 namespace CatalogoProductos.Negocio
 {
@@ -27,6 +28,19 @@ namespace CatalogoProductos.Negocio
                 throw new ArgumentException("El código del voucher sólo puede contener letras y números.");
 
             return _repo.VoucherEsValido(codigo);
+        }
+
+
+        public void RegistrarVoucherCliente(Voucher voucher)
+        {
+            try
+            {
+                _repo.Actualizar(voucher);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
     }

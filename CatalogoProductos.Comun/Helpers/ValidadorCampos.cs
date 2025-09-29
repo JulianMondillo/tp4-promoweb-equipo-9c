@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CatalogoProductos.Comun
@@ -18,6 +19,18 @@ namespace CatalogoProductos.Comun
             foreach (char c in texto)
             {
                 if (!char.IsLetterOrDigit(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool EsNumerico(string texto)
+        {
+            foreach (char c in texto)
+            {
+                if (!char.IsDigit(c))
                 {
                     return false;
                 }
@@ -45,6 +58,12 @@ namespace CatalogoProductos.Comun
             return EsTextoObligatorio(texto)
                 && TieneLongitudMinima(texto, minimo)
                 && TieneLongitudMaxima(texto, maximo);
+        }
+
+        public static bool EsEmailValido(string texto)
+        {
+            string patron = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+            return Regex.IsMatch(texto, patron);
         }
 
     }
