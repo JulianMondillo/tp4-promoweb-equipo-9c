@@ -276,6 +276,11 @@ namespace CatalogoProductos.UI
                 else
                 {
                     RegistrarCliente();
+
+                    Session.Remove("codigoVoucher");
+                    Session.Remove("premioSeleccionado");
+
+                    Response.Redirect("~/Exito.aspx", true);
                 }
             }
             catch (Exception)
@@ -283,7 +288,6 @@ namespace CatalogoProductos.UI
                 MostrarAlertaErrorInesperado("Ocurrió un error inesperado. Por favor, inténtalo nuevamente.");
             }
         }
-
         private void ValidarParametrosRequeridos()
         {
             string idArticulo = Request.QueryString["artId"];
