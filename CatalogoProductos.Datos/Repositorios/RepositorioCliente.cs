@@ -86,7 +86,26 @@ namespace CatalogoProductos.Datos.Repositorios
             AccesoDatos datos = new AccesoDatos();
             try
             {
-               
+                datos.DefinirConsulta(@"
+                    UPDATE Clientes 
+	                    SET Nombre = @Nombre,
+                            Apellido = @Apellido,
+		                    Email = @Email,
+		                    Direccion = @Direccion,
+		                    Ciudad = @Ciudad,
+		                    CP = @CodigoPostal
+                    WHERE Id = @IdCliente");
+
+                datos.setearParametro("@Nombre", cliente.Nombre);
+                datos.setearParametro("@Apellido", cliente.Apellido);
+                datos.setearParametro("@Email", cliente.Email);
+                datos.setearParametro("@Direccion", cliente.Direccion);
+                datos.setearParametro("@Ciudad", cliente.Ciudad);
+                datos.setearParametro("@CodigoPostal", cliente.CodigoPostal);
+                datos.setearParametro("@IdCliente", cliente.Id);
+
+                datos.EjecutarAccion();
+
             }
             catch (Exception)
             {
