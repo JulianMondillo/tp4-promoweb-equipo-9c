@@ -38,6 +38,12 @@ namespace CatalogoProductos.UI
                 return false;
             }
 
+            if (!ValidadorCampos.EsTextoValido(documento, 7, 9))
+            {
+                lblErrorDocumento.Text = "El documento debe tener entre 7 y 8 dígitos.";
+                return false;
+            }
+
             return true;
         }
 

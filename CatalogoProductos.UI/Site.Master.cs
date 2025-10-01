@@ -22,16 +22,24 @@ namespace CatalogoProductos.UI
             hl.CssClass = hl.CssClass.Replace("disabled", "").Replace("btn-dark", "btn-primary");
         }
 
-        private void DesactivarPaso(HyperLink hl)
+        private void DesactivarPaso(HyperLink hl, string colorBoton = "btn-dark")
         {
             hl.Enabled = false;
-            hl.CssClass = "btn btn-dark disabled d-flex align-items-center";
+            hl.CssClass = "btn disabled d-flex align-items-center " + colorBoton;
+        }
+
+        private void ActivarPasoExito(HyperLink hl)
+        {
+            hl.Enabled = false; 
+            hl.CssClass = "btn btn-success d-flex align-items-center";
         }
 
         public void ConfigurarStepper()
         {
             var codigoVoucher = Session["codigoVoucher"];
             var premioSeleccionado = Request.QueryString.Get("artId");
+            var paginaActual = HttpContext.Current.Request.Url.AbsolutePath.ToLower(); // obtener la url actual
+            
             // el paso 1 siempre estará activo.
 
             // el paso 2 solo se activará si hay un codigo en el objeto Session
@@ -52,6 +60,17 @@ namespace CatalogoProductos.UI
             else
             {
                 DesactivarPaso(hlTercerPaso);
+            }
+
+            // paso 4 - éxito
+            if (paginaActual.Contains("/exito"))
+            {
+                ActivarPasoExito(hlCuartoPaso);
+
+
+                DesactivarPaso(hlPrimerPaso, "btn-primary");
+                DesactivarPaso(hlSegundoPaso, "btn-primary");
+                DesactivarPaso(hlTercerPaso, "btn-primary");
             }
         }
 
