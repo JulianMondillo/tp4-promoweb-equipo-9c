@@ -12,8 +12,8 @@ namespace CatalogoProductos.Servicios.Email
     {
         private const string servidor = "smtp-relay.brevo.com";
         private const int puerto = 587;
-        private const string usuario = "97ee2a001@smtp-brevo.com";
-        private const string password = "";
+        private const string usuario = "{{USUARIO}}";
+        private const string password = "{{SECRET_PASSWORD}}";
      
         public bool Enviar(string destinatario, string asunto, string cuerpo, bool esHtml = false)
         {
