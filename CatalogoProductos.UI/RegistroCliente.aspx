@@ -17,6 +17,7 @@
             <div class="card-body">
 
                 <div class="mb-3">
+                    <label class="form-label" for="txtDni">Documento de Identidad</label>
                     <div class="input-group ">
                         <span class="input-group-text" id="addonDni">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
@@ -24,7 +25,8 @@
                                 <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z" />
                             </svg>
                         </span>
-                        <asp:TextBox ID="txtDni" CssClass="form-control" TextMode="Number" autocomplete="off" oninput="if(this.value<0){this.value='';}"  MaxLength="50" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtDni" CssClass="form-control" TextMode="Number" autocomplete="off" MaxLength="8" runat="server"></asp:TextBox>
+
                         <asp:Button ID="btnConsultarDni"
                             CssClass="btn btn-primary"
                             runat="server"

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8139C92F-9984-4088-8E02-2C57EC0E5913}</ProjectGuid>
+    <ProjectGuid>{0EE7BE32-39DF-47C3-9247-8EC8B4D37BD6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CatalogoProductos.Negocio</RootNamespace>
-    <AssemblyName>CatalogoProductos.Negocio</AssemblyName>
+    <RootNamespace>CatalogoProductos.Servicios</RootNamespace>
+    <AssemblyName>CatalogoProductos.Servicios</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,29 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Articulos\NegocioArticulo.cs" />
-    <Compile Include="Clientes\NegocioCliente.cs" />
-    <Compile Include="Participacion\NegocioParticipacion.cs" />
-    <Compile Include="Voucher\NegocioVoucher.cs" />
+    <Compile Include="Email\ServicioEmail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CatalogoProductos.Comun\CatalogoProductos.Comun.csproj">
-      <Project>{469c53dc-5f42-481c-91ea-67941d43913e}</Project>
-      <Name>CatalogoProductos.Comun</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CatalogoProductos.Datos\CatalogoProductos.Datos.csproj">
-      <Project>{ecbbb641-ced9-4c10-82c8-0ab4388d32d8}</Project>
-      <Name>CatalogoProductos.Datos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CatalogoProductos.Dominio\CatalogoProductos.Dominio.csproj">
-      <Project>{29d85788-7467-4ce9-a585-3874af936b24}</Project>
-      <Name>CatalogoProductos.Dominio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CatalogoProductos.Servicios\CatalogoProductos.Servicios.csproj">
-      <Project>{0ee7be32-39df-47c3-9247-8ec8b4d37bd6}</Project>
-      <Name>CatalogoProductos.Servicios</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
