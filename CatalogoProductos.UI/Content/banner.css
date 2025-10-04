@@ -1,0 +1,75 @@
+﻿.banner {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 1rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .banner h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .banner p {
+        font-size: 1.25rem;
+        font-weight: 300;
+        opacity: 0.9;
+    }
+
+    .banner svg {
+        position: absolute;
+        opacity: 0.2;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .banner .gift1 {
+        top: 10%;
+        left: 5%;
+        width: 100px;
+    }
+
+    .banner .gift2 {
+        bottom: 10%;
+        right: 10%;
+        width: 120px;
+        animation-delay: 1s;
+    }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+.gift3 {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}

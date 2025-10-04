@@ -1,0 +1,48 @@
+﻿.premios-section {
+    min-height: 70vh;
+}
+
+
+.premio-card {
+    width: 16rem;
+    border: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .premio-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    }
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(118, 75, 162, 0.7);
+    border-radius: 50%;
+    background-size: 50%, 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.modal-content {
+    border: none;
+    background: #fff;
+}
+
+.modal .btn-outline-secondary {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+    .modal .btn-outline-secondary:hover {
+        background: var(--secondary-color);
+        color: #fff;
+    }
+
+
+@media (max-width: 768px) {
+    .premio-card {
+        width: 100%;
+    }
+}

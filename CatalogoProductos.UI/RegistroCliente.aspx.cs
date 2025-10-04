@@ -260,7 +260,7 @@ namespace CatalogoProductos.UI
                     HabilitarFormularioRegistro();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MostrarAlertaErrorInesperado("Ocurrió un error inesperado. Por favor, inténtalo nuevamente.");
             }
@@ -286,10 +286,10 @@ namespace CatalogoProductos.UI
                     Session.Remove("codigoVoucher");
                     Session.Remove("premioSeleccionado");
 
-                    Response.Redirect("~/Exito.aspx", true);
+                    Response.Redirect("~/Exito.aspx", false);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MostrarAlertaErrorInesperado("Ocurrió un error inesperado. Por favor, inténtalo nuevamente.");
             }
