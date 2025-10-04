@@ -92,17 +92,29 @@ namespace CatalogoProductos.UI
             ReiniciarValidaciones();
             bool esValido = true;
             if (!ValidadorCampos.EsTextoObligatorio(txtNombre.Text?.Trim()) ||
-                !ValidadorCampos.EsTextoValido(txtNombre.Text?.Trim(), 2, 50))
+            !ValidadorCampos.EsTextoValido(txtNombre.Text?.Trim(), 2, 50))
             {
                 MostrarErrorCampo(lblErrorNombre, txtNombre, "El nombre es obligatorio y debe tener entre 2 y 50 caracteres.");
                 esValido = false;
             }
+            else if (!ValidadorCampos.EsSoloLetrasYEspacios(txtNombre.Text.Trim()))
+            {
+                MostrarErrorCampo(lblErrorNombre, txtNombre, "El nombre solo puede contener letras y espacios.");
+                esValido = false;
+            }
+
             if (!ValidadorCampos.EsTextoObligatorio(txtApellido.Text?.Trim()) ||
                 !ValidadorCampos.EsTextoValido(txtApellido.Text?.Trim(), 2, 50))
             {
                 MostrarErrorCampo(lblErrorApellido, txtApellido, "El apellido es obligatorio y debe tener entre 2 y 50 caracteres.");
                 esValido = false;
             }
+            else if (!ValidadorCampos.EsSoloLetrasYEspacios(txtApellido.Text.Trim()))
+            {
+                MostrarErrorCampo(lblErrorApellido, txtApellido, "El apellido solo puede contener letras y espacios.");
+                esValido = false;
+            }
+
             if (!ValidadorCampos.EsTextoObligatorio(txtEmail.Text?.Trim()) ||
                 !ValidadorCampos.EsEmailValido(txtEmail.Text?.Trim()))
             {

@@ -66,5 +66,13 @@ namespace CatalogoProductos.Comun
             return Regex.IsMatch(texto, patron);
         }
 
+        public static bool EsSoloLetrasYEspacios(string texto)
+        {
+            if (string.IsNullOrWhiteSpace(texto))
+                return false;
+
+            return texto.All(c => char.IsLetter(c) || char.IsWhiteSpace(c));
+        }
+
     }
 }
